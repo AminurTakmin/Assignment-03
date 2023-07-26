@@ -26,6 +26,12 @@
       };
     </script>
 
+    <!-- ! Font awsome -->
+    <script
+      src="https://kit.fontawesome.com/2463302edb.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- ! Lato Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,6 +48,157 @@
     </style>
   </head>
   <body class="font-lato">
-    <h1>Assignment Starts</h1>
+    <header class="container mx-auto">
+      <!-- ! navbar starts -->
+      <nav class="my-10 flex justify-center">
+        <div class="navbar lg:bg-[#F85559] lg:px-10 rounded-full w-11/12">
+          <div class="navbar-start">
+            <!-- dropdown not for lg -->
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base"
+              >
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-lg text-white">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="navbar-center gap-4">
+            <img src="images/logo.png" alt="" />
+            <a class="text-4xl font-bold md:text-black lg:text-white"
+              >Fruit Burst</a
+            >
+          </div>
+
+          <div class="navbar-end">
+            <button class="navbar-center">
+              <div class="flex items-center input input-bordered rounded-full">
+                <input type="text" placeholder="Search here" />
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- ! navbar ends -->
+    </header>
+
+    <main class="container mx-auto">
+      <!-- ! Exotic starts banner-->
+      <section class="text-center">
+        <div class="">
+          <div class="carousel w-11/12 text-center">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="images/banner1.png" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="images/banner2.png" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="images/banner3.png" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="images/banner4.png" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          <!-- bonus -->
+          <div class="hidden md:hidden lg:flex justify-center">
+            <div
+              class="flex -mt-20 items-center justify-center text-center gap-4 bg-white drop-shadow-lg px-5 py-2 w-9/12 rounded-lg"
+            >
+              <div>
+                <img src="images/fruit1.png" alt="" />
+                <p>Strawberry</p>
+              </div>
+              <div>
+                <img src="images/fruit2.png" alt="" />
+                <p>Strawberry</p>
+              </div>
+              <div>
+                <img src="images/fruit3.png" alt="" />
+                <p>Strawberry</p>
+              </div>
+              <div>
+                <img src="images/fruit4.png" alt="" />
+                <p>Strawberry</p>
+              </div>
+              <div>
+                <img src="images/fruit5.png" alt="" />
+                <p>Strawberry</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
   </body>
 </html>
